@@ -12,3 +12,6 @@
 
 ### Challenge 03: Remove Middle Value  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/whiteboard-challenges/assets/Remove%20Middle%20Value%20from%20Array.PNG)
 
+### Challenge 04: Insert Value in Middle of Array  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/whiteboard-challenges/assets/Insert%20Value%20in%20Middle%20of%20Array.PNG)
+
+
