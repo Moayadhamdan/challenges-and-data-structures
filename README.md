@@ -14,4 +14,7 @@
 
 ### Challenge 04: Insert Value in Middle of Array  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/whiteboard-challenges/assets/Insert%20Value%20in%20Middle%20of%20Array.PNG)
 
+### Challenge 05: Find Duplicates in Array  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Find-Duplicates/Find-Duplicates/README.md)
+
+
 
