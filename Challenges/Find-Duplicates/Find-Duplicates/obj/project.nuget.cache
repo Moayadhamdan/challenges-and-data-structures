@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "+5MNNc7dn44=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\STUDENT\\source\\repos\\Moayadhamdan\\challenges-and-data-structures\\Challenges\\Find-Duplicates\\Find-Duplicates\\Find-Duplicates.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\STUDENT\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\STUDENT\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\STUDENT\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\STUDENT\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.19\\microsoft.netcore.app.host.win-x64.7.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
