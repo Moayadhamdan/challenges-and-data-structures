@@ -16,5 +16,7 @@
 
 ### Challenge 05: Find Duplicates in Array  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Find-Duplicates/Find-Duplicates/README.md)
 
+### Challenge 06-A: Find Common Elements in Two Arrays  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Common-Elements/Common-Elements/README.md)
+
 
 
