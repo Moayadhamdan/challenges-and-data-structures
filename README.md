@@ -18,5 +18,7 @@
 
 ### Challenge 06-A: Find Common Elements in Two Arrays  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Common-Elements/Common-Elements/README.md)
 
+### Challenge 06-B: Reverse Words  [Link](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Reverse-Words/Reverse-Words/README.md)
+
 
 
