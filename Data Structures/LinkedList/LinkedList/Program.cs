@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LinkedList
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("--------------------- Linked List Implementation ---------------------");
             LinkedListClass list = new LinkedListClass();
 
             // Adding nodes to the list
@@ -28,6 +30,30 @@ namespace LinkedList
             Console.WriteLine("\nRemoving node with data 4:");
             list.Remove(4);
             list.PrintList();
+
+            Console.WriteLine("--------------------- Linked List Remove Duplicates ---------------------");
+            LinkedListClass list2 = new LinkedListClass();
+
+            // Adding nodes to the list
+            list.Head = new Node(2);
+            list.Head.Next = new Node(4);
+            list.Head.Next.Next = new Node(8);
+            list.Head.Next.Next.Next = new Node(4);
+            list.Head.Next.Next.Next.Next = new Node(16);
+            list.Head.Next.Next.Next.Next.Next = new Node(8);
+            list.Head.Next.Next.Next.Next.Next.Next = new Node(4);
+
+            // Test PrintList method  
+            Console.WriteLine("List before removing duplicates:");
+            list.PrintList();
+
+            // Remove duplicates
+            list.RemoveDuplicate();
+
+            // Print list after removing duplicates
+            Console.WriteLine("List after removing duplicates:");
+            list.PrintList();
+
 
         }
     }

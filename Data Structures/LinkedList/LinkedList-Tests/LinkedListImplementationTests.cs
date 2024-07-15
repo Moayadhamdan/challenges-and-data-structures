@@ -5,7 +5,7 @@ using Xunit;
 
 namespace LinkedList_Tests
 {
-    public class UnitTest1
+    public class LinkedListImplementationTests
     {
         [Fact]
         public void TestIncludes()
@@ -66,7 +66,7 @@ namespace LinkedList_Tests
         }
 
         // Helper method for testing PrintList()
-        private string CaptureConsoleOutput(Action action)
+        public string CaptureConsoleOutput(Action action)
         {
             var consoleOutput = new StringWriter();
             Console.SetOut(consoleOutput);
