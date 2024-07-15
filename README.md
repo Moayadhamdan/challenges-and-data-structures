@@ -12,7 +12,7 @@
 ## 5. [Challenge 05: Find Duplicates in Array](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Find-Duplicates/Find-Duplicates/README.md)
 ## 6. [Challenge 06-A: Find Common Elements in Two Arrays](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Common-Elements/Common-Elements/README.md)
 ## 7. [Challenge 06-B: Reverse Words](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Challenges/Reverse-Words/Reverse-Words/README.md)
-## 8. [Data Structures Challenges](#data-structures-challenges)
+## 8. [Data Structures Challenges](https://github.com/Moayadhamdan/challenges-and-data-structures/tree/main/Data%20Structures)
 ###    - [Linked List Implementation](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/LinkedList/LinkedList/LinkedListImplementation/README.md)
 ###    - [Linked List Remove Duplicates](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/LinkedList/LinkedList/RemoveDuplicates/README.md)
 
