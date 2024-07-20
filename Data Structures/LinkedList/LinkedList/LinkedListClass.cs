@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace LinkedList
 {
@@ -88,6 +87,44 @@ namespace LinkedList
                 }
                 current = current.Next;
             }
+        }
+
+        // MergeSortedLists method
+        public static LinkedListClass MergeSortedLists(LinkedListClass list1, LinkedListClass list2)
+        {
+            Node dummy = new Node(0);
+            Node tail = dummy;
+
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+
+            while (current1 != null && current2 != null)
+            {
+                if (current1.Data < current2.Data)
+                {
+                    tail.Next = current1;
+                    current1 = current1.Next;
+                }
+                else
+                {
+                    tail.Next = current2;
+                    current2 = current2.Next;
+                }
+                tail = tail.Next;
+            }
+
+            if (current1 != null)
+            {
+                tail.Next = current1;
+            }
+            if (current2 != null)
+            {
+                tail.Next = current2;
+            }
+
+            LinkedListClass mergedList = new LinkedListClass();
+            mergedList.Head = dummy.Next;
+            return mergedList;
         }
     }
 }
