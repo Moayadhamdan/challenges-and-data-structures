@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace LinkedList
 {
@@ -19,7 +18,6 @@ namespace LinkedList
             // Test PrintList method  
             Console.WriteLine("List:");
             list.PrintList();
-
 
             // Test Includes method
             Console.WriteLine("\nTesting Includes method:");
@@ -55,6 +53,31 @@ namespace LinkedList
             list.PrintList();
 
 
+            Console.WriteLine("--------------------- Linked List Merge Sorted Lists ---------------------");
+            // Adding nodes to the sortedList1
+            LinkedListClass sortedList1 = new LinkedListClass();
+            sortedList1.Head = new Node(1);
+            sortedList1.Head.Next = new Node(3);
+            sortedList1.Head.Next.Next = new Node(5);
+
+            // Print sortedList1 
+            Console.WriteLine("sortedList1:");
+            sortedList1.PrintList();
+
+            // Adding nodes to the sortedList2
+            LinkedListClass sortedList2 = new LinkedListClass();
+            sortedList2.Head = new Node(2);
+            sortedList2.Head.Next = new Node(4);
+            sortedList2.Head.Next.Next = new Node(6);
+
+            // Print sortedList2 
+            Console.WriteLine("sortedList2:");
+            sortedList2.PrintList();
+
+            // Tests Merge Sorted Lists method
+            LinkedListClass mergedList = LinkedListClass.MergeSortedLists(sortedList1, sortedList2);
+            Console.WriteLine("Merged List:");
+            mergedList.PrintList();
         }
     }
 }
