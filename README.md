@@ -16,6 +16,7 @@
 ###    A) [Linked List Implementation](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/LinkedList/LinkedList/LinkedListImplementation/README.md)
 ###    B) [Linked List Remove Duplicates](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/LinkedList/LinkedList/RemoveDuplicates/README.md)
 ###    C) [Linked List Merge Sorted Lists](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/LinkedList/LinkedList/MergeSorted/README.md)
+###    D) [Stack and Queue Implementation](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/README.md)
 
 
 
