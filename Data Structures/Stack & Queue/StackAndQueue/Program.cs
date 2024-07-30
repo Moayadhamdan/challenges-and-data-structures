@@ -1,4 +1,5 @@
 ﻿using StackAndQueue.Queue;
+using StackAndQueue.ReverseStackUsingQueue;
 using StackAndQueue.Stack;
 
 namespace StackAndQueue
@@ -42,6 +43,31 @@ namespace StackAndQueue
             Console.WriteLine($"Is the Queue Empty? {queue.IsEmpty()}");
             Console.WriteLine("\nQueue After Dequeue Operation:");
             queue.PrintQueue();
+
+            // Reverse Stack example
+            Console.WriteLine("=============== Reverse Stack Example ===============");
+            StackWithReverse reverseStack = new StackWithReverse();
+            reverseStack.Push(1);
+            reverseStack.Push(2);
+            reverseStack.Push(3);
+            reverseStack.Push(4);
+            reverseStack.Push(5);
+
+            Console.WriteLine("Initial Stack:");
+            reverseStack.PrintStack();
+            Console.WriteLine("\nReversing Stack:");
+            reverseStack.ReverseStack();
+            Console.WriteLine("Stack After Reversing:");
+            reverseStack.PrintStack();
+
+            reverseStack.Push(6);
+            reverseStack.Push(7);
+            Console.WriteLine("\nStack After Pushing 6 and 7:");
+            reverseStack.PrintStack();
+            Console.WriteLine("\nReversing Stack Again:");
+            reverseStack.ReverseStack();
+            Console.WriteLine("Stack After Reversing Again:");
+            reverseStack.PrintStack();
         }
     }
 }
