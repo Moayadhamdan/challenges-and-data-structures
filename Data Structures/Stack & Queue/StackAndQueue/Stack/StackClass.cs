@@ -8,7 +8,7 @@ namespace StackAndQueue.Stack
 {
     public class StackClass
     {
-        private Node top;
+        public Node top;
 
         public StackClass()
         {
