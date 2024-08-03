@@ -8,7 +8,7 @@ namespace StackAndQueue_Tests
         [Fact]
         public void TestReverseStackWithMultipleElements()
         {
-            // Assert
+            // Arrange
             StackWithReverse stack = new StackWithReverse();
             stack.Push(1);
             stack.Push(2);

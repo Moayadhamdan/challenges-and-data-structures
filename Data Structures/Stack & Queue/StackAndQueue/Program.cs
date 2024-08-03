@@ -1,6 +1,7 @@
 ﻿using StackAndQueue.Queue;
 using StackAndQueue.ReverseStackUsingQueue;
 using StackAndQueue.Stack;
+using StackAndQueue.DeleteMiddleElement;
 
 namespace StackAndQueue
 {
@@ -68,6 +69,32 @@ namespace StackAndQueue
             reverseStack.ReverseStack();
             Console.WriteLine("Stack After Reversing Again:");
             reverseStack.PrintStack();
+
+            // Delete Middle Element from Stack example
+            Console.WriteLine("=============== Delete Middle Element Example ===============");
+            StackWithDeleteMiddle stackWithDeleteMiddle = new StackWithDeleteMiddle();
+            stackWithDeleteMiddle.Push(7);
+            stackWithDeleteMiddle.Push(14);
+            stackWithDeleteMiddle.Push(3);
+            stackWithDeleteMiddle.Push(8);
+            stackWithDeleteMiddle.Push(5);
+
+            Console.WriteLine("Initial Stack:");
+            stackWithDeleteMiddle.PrintStack();
+            Console.WriteLine("\nDeleting Middle Element:");
+            stackWithDeleteMiddle.DeleteMiddle();
+            Console.WriteLine("Stack After Deleting Middle Element:");
+            stackWithDeleteMiddle.PrintStack();
+
+            stackWithDeleteMiddle.Push(2);
+            stackWithDeleteMiddle.Push(9);
+            stackWithDeleteMiddle.Push(11);
+            Console.WriteLine("\nStack After Pushing 2, 9, 11:");
+            stackWithDeleteMiddle.PrintStack();
+            Console.WriteLine("\nDeleting Middle Element Again:");
+            stackWithDeleteMiddle.DeleteMiddle();
+            Console.WriteLine("Stack After Deleting Middle Element Again:");
+            stackWithDeleteMiddle.PrintStack();
         }
     }
 }
