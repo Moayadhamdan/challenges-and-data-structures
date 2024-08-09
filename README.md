@@ -19,6 +19,8 @@
 ###    D) [Stack and Queue Implementation](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/README.md)
 ###    E) [Stack & Queue: Reverse a Stack using Queue](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/ReverseStackUsingQueue/README.md)
 ###    F) [Stack Challenge: Delete Middle Element of a Stack](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/DeleteMiddleElement/README.md)
+###    G) [Min Stack Challenge](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/MinStack/README.md)
+
 
 
 
