@@ -2,6 +2,7 @@
 using StackAndQueue.ReverseStackUsingQueue;
 using StackAndQueue.Stack;
 using StackAndQueue.DeleteMiddleElement;
+using StackAndQueue.MinStack;
 
 namespace StackAndQueue
 {
@@ -76,8 +77,8 @@ namespace StackAndQueue
             stackWithDeleteMiddle.Push(7);
             stackWithDeleteMiddle.Push(14);
             stackWithDeleteMiddle.Push(3);
-            stackWithDeleteMiddle.Push(8);
             stackWithDeleteMiddle.Push(5);
+            stackWithDeleteMiddle.Push(8);
 
             Console.WriteLine("Initial Stack:");
             stackWithDeleteMiddle.PrintStack();
@@ -95,6 +96,49 @@ namespace StackAndQueue
             stackWithDeleteMiddle.DeleteMiddle();
             Console.WriteLine("Stack After Deleting Middle Element Again:");
             stackWithDeleteMiddle.PrintStack();
+
+            // MinStack example
+            Console.WriteLine("=============== MinStack Example ===============");
+            MinStackClass minStack = new MinStackClass();
+
+            // Push elements
+            minStack.Push(15); // Top -> 15 (min: 15)
+            minStack.Push(7);  // Top -> 7 -> 15 (min: 7)
+            minStack.Push(12); // Top -> 12 -> 7 -> 15 (min: 7)
+            minStack.Push(3);  // Top -> 3 -> 12 -> 7 -> 15 (min: 3)
+
+            // Print the stack
+            minStack.PrintStack(); // Output: Top -> 3 -> 12 -> 7 -> 15
+
+            // Get the minimum element
+            int min = minStack.GetMin(); // min: 3
+            Console.WriteLine($"Minimum element: {min}");
+
+            // Pop a node from the stack
+            int popped = minStack.Pop(); // popped: 3
+            Console.WriteLine($"Popped element: {popped}");
+            minStack.PrintStack(); // Output: Top -> 12 -> 7 -> 15
+
+            // Get the new minimum element
+            min = minStack.GetMin(); // min: 7
+            Console.WriteLine($"New minimum element: {min}");
+
+            // Peek the top node
+            int peeked = minStack.Top(); // peeked: 12
+            Console.WriteLine($"Top element: {peeked}");
+
+            // Push another element
+            minStack.Push(2);  // Top -> 2 -> 12 -> 7 -> 15 (min: 2)
+            Console.WriteLine("After add 2");
+            minStack.PrintStack(); // Output: Top -> 2 -> 12 -> 7 -> 15
+
+            // Get the new minimum element
+            min = minStack.GetMin(); // min: 2
+            Console.WriteLine($"New minimum element: {min}");
+
+            // Check if the stack is empty
+            bool isEmpty = minStack.IsEmpty(); // isEmpty: false
+            Console.WriteLine($"Is stack empty? {isEmpty}");
         }
     }
 }
