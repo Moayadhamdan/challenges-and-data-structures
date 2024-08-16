@@ -47,7 +47,7 @@ namespace TreeImplementation
             result.Add(node.Value);
             return result;
         }
-
+        // Print the tree
         public void Print(Node node, string indent = "", bool last = true)
         {
             if (node != null)
@@ -68,6 +68,27 @@ namespace TreeImplementation
                 Print(node.Left, indent, false);
                 Print(node.Right, indent, true);
             }
+
+
+        }
+
+        // Mirror the tree
+        public void MirrorTree(Node node)
+        {
+            if (node == null)
+                return;
+
+            MirrorTree(node.Left);
+            MirrorTree(node.Right);
+
+            Node temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+        }
+
+        public List<int> InorderTraversal()
+        {
+            return InOrder(Root);
         }
 
 
