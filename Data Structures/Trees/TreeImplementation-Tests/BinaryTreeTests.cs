@@ -115,5 +115,67 @@ namespace TreeImplementation_Tests
             Assert.Empty(originalInorder);
             Assert.Empty(mirroredInorder);
         }
+
+
+        // Unit Tests Second Maximum Value in Tree
+        // Test 1: Finding the maximum value in a binary tree using the provided example
+        [Fact]
+        public void FindMaxProvidedExample()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(10);
+            Btree.Root.Left = new Node(5);
+            Btree.Root.Right = new Node(20);
+            Btree.Root.Left.Left = new Node(3);
+            Btree.Root.Left.Right = new Node(7);
+            Btree.Root.Right.Left = new Node(15);
+            Btree.Root.Right.Right = new Node(25);
+
+            // Act
+            int maxValue = Btree.FindMax(Btree.Root);
+
+            // Assert
+            Assert.Equal(25, maxValue);
+        }
+
+        // Test 2: Testing with a tree having fewer than two unique values
+        [Fact]
+        public void FindMaxTreeWithFewerThanTwoUniqueValues()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(10);
+            Btree.Root.Left = new Node(10);
+            Btree.Root.Right = new Node(10);
+
+            // Act
+            int maxValue = Btree.FindMax(Btree.Root);
+
+            // Assert
+            Assert.Equal(10, maxValue);
+            Assert.Throws<InvalidOperationException>(() => Btree.FindSecondMax());
+        }
+
+        // Test 3: Testing with a tree having negative values
+        [Fact]
+        public void FindMaxNegativeValues()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(-10);
+            Btree.Root.Left = new Node(-20);
+            Btree.Root.Right = new Node(-5);
+            Btree.Root.Left.Left = new Node(-30);
+            Btree.Root.Left.Right = new Node(-15);
+            Btree.Root.Right.Left = new Node(-7);
+            Btree.Root.Right.Right = new Node(-3);
+
+            // Act
+            int maxValue = Btree.FindMax(Btree.Root);
+
+            // Assert
+            Assert.Equal(-3, maxValue);
+        }
     }
 }

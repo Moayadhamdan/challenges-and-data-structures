@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace TreeImplementation
 {
@@ -85,6 +86,31 @@ namespace TreeImplementation
             Console.WriteLine("Mirrored InOrder Traversal:");
             List<int> mirroredInorder = MirrorTree.InOrder(MirrorTree.Root);
             Console.WriteLine(string.Join(", ", mirroredInorder));
+
+
+
+            // Second Maximum Value In Tree Example
+            Console.WriteLine("=============== Second Maximum Value In Tree Example ===============");
+            BinaryTree secondMaximumValue = new BinaryTree();
+            secondMaximumValue.Root = new Node(10);
+            secondMaximumValue.Root.Left = new Node(5);
+            secondMaximumValue.Root.Right = new Node(20);
+            secondMaximumValue.Root.Left.Left = new Node(3);
+            secondMaximumValue.Root.Left.Right = new Node(7);
+            secondMaximumValue.Root.Right.Left = new Node(15);
+            secondMaximumValue.Root.Right.Right = new Node(25);
+
+            // Print Tree
+            Console.WriteLine("Binary Tree:");
+            secondMaximumValue.Print(secondMaximumValue.Root);
+
+            // Find the maximum value in the tree
+            int maxValue = secondMaximumValue.FindMax(secondMaximumValue.Root); // Output: 25
+            Console.WriteLine("\nMaximum Value: " + maxValue);
+
+            // Find the second maximum value in the tree
+            int secondMax = secondMaximumValue.FindSecondMax(); // Output: 20
+            Console.WriteLine("Second Maximum Value: " + secondMax);
         }
     }
 }

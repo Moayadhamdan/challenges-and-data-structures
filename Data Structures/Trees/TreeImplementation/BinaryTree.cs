@@ -92,6 +92,44 @@ namespace TreeImplementation
         }
 
 
+        // Method to find the maximum value in the tree
+        public int FindMax(Node node)
+        {
+            if (node == null)
+                return int.MinValue;
+
+            int maxLeft = FindMax(node.Left);
+            int maxRight = FindMax(node.Right);
+            return Math.Max(node.Value, Math.Max(maxLeft, maxRight));
+        }
+
+
+        // Method to find the second maximum value in the tree
+        public int FindSecondMax()
+        {
+            if (Root == null)
+                throw new InvalidOperationException("Tree is empty.");
+
+            int max = FindMax(Root);
+            int secondMax = FindSecondMaxHelper(Root, max);
+
+            if (secondMax == int.MinValue)
+                throw new InvalidOperationException("No second maximum found.");
+
+            return secondMax;
+        }
+
+        private int FindSecondMaxHelper(Node node, int max)
+        {
+            if (node == null)
+                return int.MinValue;
+
+            int secondMax = node.Value < max ? node.Value : int.MinValue;
+            int leftSecondMax = FindSecondMaxHelper(node.Left, max);
+            int rightSecondMax = FindSecondMaxHelper(node.Right, max);
+
+            return Math.Max(secondMax, Math.Max(leftSecondMax, rightSecondMax));
+        }
 
     }
 
