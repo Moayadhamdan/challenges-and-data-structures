@@ -22,6 +22,8 @@
 ###    G) [Min Stack Challenge](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/MinStack/README.md)
 ###    H) [Tree Implementation](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/README.md)
 ###    I) [Binary Tree - Mirror Tree](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/MirrorTree/README.md)
+###    J) [Binary Tree - Second Maximum Value](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/SecondMaxValue/README.md)
+
 
 
 
