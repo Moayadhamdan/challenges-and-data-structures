@@ -111,6 +111,30 @@ namespace TreeImplementation
             // Find the second maximum value in the tree
             int secondMax = secondMaximumValue.FindSecondMax(); // Output: 20
             Console.WriteLine("Second Maximum Value: " + secondMax);
+
+
+
+            // Sum Of Leaf Nodes In Tree Example
+            Console.WriteLine("=============== Sum Of Leaf Nodes In Tree Example ===============");
+            BinaryTree sumOfLeafNodes = new BinaryTree();
+            sumOfLeafNodes.Root = new Node(9);
+            sumOfLeafNodes.Root.Left = new Node(8);
+            sumOfLeafNodes.Root.Right = new Node(12);
+            sumOfLeafNodes.Root.Left.Left = new Node(3);
+            sumOfLeafNodes.Root.Left.Right = new Node(7);
+            sumOfLeafNodes.Root.Right.Left = new Node(17);
+            sumOfLeafNodes.Root.Right.Right = new Node(23);
+            sumOfLeafNodes.Root.Left.Left.Right = new Node(4);
+
+            // Print Tree
+            Console.WriteLine("Binary Tree:");
+            sumOfLeafNodes.Print(sumOfLeafNodes.Root);
+
+            // Calculate the sum of the leaf nodes
+            int leafSum = sumOfLeafNodes.SumOfLeafNodes();
+
+            // Output the result
+            Console.WriteLine("\nThe sum of the leaf nodes is: " + leafSum);
         }
     }
 }

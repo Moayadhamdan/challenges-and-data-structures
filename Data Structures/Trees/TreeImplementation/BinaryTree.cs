@@ -131,6 +131,25 @@ namespace TreeImplementation
             return Math.Max(secondMax, Math.Max(leftSecondMax, rightSecondMax));
         }
 
+
+
+        // Sum of leaf nodes in the tree
+        public int SumOfLeafNodes()
+        {
+            return SumOfLeafNodes(Root);
+        }
+
+        private int SumOfLeafNodes(Node node)
+        {
+            if (node == null)
+                return 0;
+
+            if (node.Left == null && node.Right == null)
+                return node.Value;
+
+            return SumOfLeafNodes(node.Left) + SumOfLeafNodes(node.Right);
+        }
+
     }
 
 }
