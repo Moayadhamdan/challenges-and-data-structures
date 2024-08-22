@@ -52,8 +52,12 @@ namespace TreeImplementation_Tests
             Assert.Equal(new List<int> { 5, 15, 10 }, result);
         }
 
+        /// <summary>
+        /// ==============================================================================================================================================
+        /// </summary>
 
         // Unit Tests For Mirror Tree
+        // Test 1: Test converting a tree into its mirror and performing inorder traversal
         [Fact]
         public void TestMirrorTree()
         {
@@ -78,6 +82,7 @@ namespace TreeImplementation_Tests
             Assert.Equal(expectedMirroredInorder, mirroredInorder);
         }
 
+        // Test 2: Test with a single-node tree
         [Fact]
         public void TestMirrorTreeSingleNode()
         {
@@ -98,6 +103,7 @@ namespace TreeImplementation_Tests
             Assert.Equal(expectedMirroredInorder, mirroredInorder);
         }
 
+        // Test 3: Test with an empty tree
         [Fact]
         public void TestMirrorTreeEmpty()
         {
@@ -116,6 +122,9 @@ namespace TreeImplementation_Tests
             Assert.Empty(mirroredInorder);
         }
 
+        /// <summary>
+        /// ==============================================================================================================================================
+        /// </summary>
 
         // Unit Tests Second Maximum Value in Tree
         // Test 1: Finding the maximum value in a binary tree using the provided example
@@ -176,6 +185,53 @@ namespace TreeImplementation_Tests
 
             // Assert
             Assert.Equal(-3, maxValue);
+
+        }
+
+        /// <summary>
+        /// ==============================================================================================================================================
+        /// </summary>
+
+        // Unit Tests Sum Of Leaf Nodes In Tree Example
+        // Test 1: Test calculating the sum of all leaf nodes in a binary tree using the provided example
+        [Fact]
+        public void TestSumOfLeafNodes()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(9);
+            Btree.Root.Left = new Node(8);
+            Btree.Root.Right = new Node(12);
+            Btree.Root.Left.Left = new Node(3);
+            Btree.Root.Left.Right = new Node(7);
+            Btree.Root.Right.Left = new Node(17);
+            Btree.Root.Right.Right = new Node(23);
+            Btree.Root.Left.Left.Right = new Node(4);
+
+            // Act
+            int leafSum = Btree.SumOfLeafNodes();
+
+            // Assert
+            Assert.Equal(51, leafSum);
+        }
+
+        // Test 2: Test calculating the sum of all leaf nodes in a binary tree using example with negative leaf values
+        [Fact]
+        public void TestSumOfLeafNodeWithNegativeValues()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(5);
+            Btree.Root.Left = new Node(-3);
+            Btree.Root.Right = new Node(2);
+            Btree.Root.Right.Left = new Node(4);
+            Btree.Root.Right.Right = new Node(-7);
+
+            // Act
+            int leafSum = Btree.SumOfLeafNodes();
+
+            // Assert
+            Assert.Equal(-6, leafSum);
         }
     }
 }
