@@ -35,7 +35,7 @@ namespace TreeImplementation
             Console.WriteLine("\nBinary Tree Structure:");
             binaryTree.Print(binaryTree.Root);
 
-
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Binary Search Tree Example
             Console.WriteLine("=============== Binary Search Tree Example ===============");
@@ -59,7 +59,7 @@ namespace TreeImplementation
             Console.WriteLine("\nBinary Search Tree Structure:");
             bst.Print(bst.Root);
 
-
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Mirror Tree Example
             Console.WriteLine("=============== Mirror Tree Example ===============");
@@ -87,7 +87,7 @@ namespace TreeImplementation
             List<int> mirroredInorder = MirrorTree.InOrder(MirrorTree.Root);
             Console.WriteLine(string.Join(", ", mirroredInorder));
 
-
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Second Maximum Value In Tree Example
             Console.WriteLine("=============== Second Maximum Value In Tree Example ===============");
@@ -112,7 +112,7 @@ namespace TreeImplementation
             int secondMax = secondMaximumValue.FindSecondMax(); // Output: 20
             Console.WriteLine("Second Maximum Value: " + secondMax);
 
-
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Sum Of Leaf Nodes In Tree Example
             Console.WriteLine("=============== Sum Of Leaf Nodes In Tree Example ===============");
@@ -135,6 +135,36 @@ namespace TreeImplementation
 
             // Output the result
             Console.WriteLine("\nThe sum of the leaf nodes is: " + leafSum);
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // Largest Value at Each Level In Tree
+            Console.WriteLine("=============== Largest Value at Each Level In Tree ===============");
+            BinaryTree largestValueAtEachLevel = new BinaryTree();
+            largestValueAtEachLevel.Root = new Node(5);
+            largestValueAtEachLevel.Root.Left = new Node(13);
+            largestValueAtEachLevel.Root.Right = new Node(7);
+            largestValueAtEachLevel.Root.Left.Left = new Node(3);
+            largestValueAtEachLevel.Root.Left.Right = new Node(7);
+            largestValueAtEachLevel.Root.Right.Left = new Node(12);
+            largestValueAtEachLevel.Root.Right.Right = new Node(20);
+            largestValueAtEachLevel.Root.Left.Left.Left = new Node(1);
+            largestValueAtEachLevel.Root.Left.Left.Right = new Node(4);
+            largestValueAtEachLevel.Root.Right.Left.Right = new Node(11);
+
+            // Print Tree
+            Console.WriteLine("Binary Tree:");
+            largestValueAtEachLevel.Print(largestValueAtEachLevel.Root);
+
+            // Finding the largest value at each level
+            List<int> largestValues = largestValueAtEachLevel.LargestValueEachLevel();
+
+            // Display the result
+            Console.WriteLine("Largest values at each level:");
+            foreach (int value in largestValues)
+            {
+                Console.WriteLine(value);
+            }
         }
     }
 }
