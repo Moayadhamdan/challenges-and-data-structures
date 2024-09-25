@@ -65,6 +65,19 @@ namespace LinkedList
             }
             Console.WriteLine("Null");
         }
+        // PrintListForTest method
+        public string PrintListForTest()
+        {
+            Node current = Head;
+            string result = "";
+            while (current != null)
+            {
+                result += current.Data + " -> ";
+                current = current.Next;
+            }
+            result += "Null";
+            return result;
+        }
 
         // RemoveDuplicate method
         public void RemoveDuplicate()
@@ -125,6 +138,41 @@ namespace LinkedList
             LinkedListClass mergedList = new LinkedListClass();
             mergedList.Head = dummy.Next;
             return mergedList;
+        }
+
+        // RotateLeft method
+        public void RotateLeft(int k)
+        {
+            if (Head == null || k == 0)
+                return;
+
+            int length = 1;
+            Node current = Head;
+            while (current.Next != null)
+            {
+                current = current.Next;
+                length++;
+            }
+            k = k % length;
+            if (k == 0)
+                return;
+
+            current = Head;
+            for (int i = 1; i < k; i++)
+            {
+                current = current.Next;
+            }
+            Node newHead = current.Next;
+            current.Next = null;
+
+            Node end = newHead;
+            while (end.Next != null)
+            {
+                end = end.Next;
+            }
+            end.Next = Head;
+
+            Head = newHead;
         }
     }
 }
