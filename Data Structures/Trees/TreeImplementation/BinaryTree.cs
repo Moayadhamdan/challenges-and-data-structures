@@ -193,6 +193,48 @@ namespace TreeImplementation
             return result;
         }
 
+
+
+        // Print Right View
+        public void PrintRightView()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("The tree is empty.");
+                return;
+            }
+
+            var queue = new Queue<Node>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+
+                // Traverse all nodes of the current level
+                for (int i = 0; i < levelSize; i++)
+                {
+                    Node currentNode = queue.Dequeue();
+
+                    // If it's the last node in the current level, print it
+                    if (i == levelSize - 1)
+                    {
+                        Console.Write(currentNode.Value + " ");
+                    }
+
+                    // Enqueue left and right children of the current node
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+            }
+        }
     }
 
 }
