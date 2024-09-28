@@ -165,6 +165,28 @@ namespace TreeImplementation
             {
                 Console.WriteLine(value);
             }
+
+
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // Print Right View In Tree
+            Console.WriteLine("=============== Print Right View In Tree ===============");
+            BinaryTree printRightView = new BinaryTree();
+            printRightView.Root = new Node(2);
+            printRightView.Root.Left = new Node(3);
+            printRightView.Root.Right = new Node(5);
+            printRightView.Root.Left.Left = new Node(4);
+            printRightView.Root.Right.Right = new Node(6);
+            printRightView.Root.Left.Left.Right = new Node(7);
+
+            // Print Tree
+            Console.WriteLine("Binary Tree:");
+            printRightView.Print(printRightView.Root);
+
+            // Print Right View In Tree
+            Console.WriteLine("Binary Tree Just Right View:");
+            printRightView.PrintRightView();
         }
     }
 }
