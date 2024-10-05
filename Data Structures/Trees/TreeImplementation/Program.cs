@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using System.Xml.Linq;
 
 namespace TreeImplementation
@@ -187,6 +188,28 @@ namespace TreeImplementation
             // Print Right View In Tree
             Console.WriteLine("Binary Tree Just Right View:");
             printRightView.PrintRightView();
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // Level with Maximum Number of Nodes
+            Console.WriteLine("\n=============== Level with Maximum Number of Nodes ===============");
+            BinaryTree levelWithMaximumNumberOfNodes = new BinaryTree();
+            levelWithMaximumNumberOfNodes.Root = new Node(10);
+            levelWithMaximumNumberOfNodes.Root.Left = new Node(5);
+            levelWithMaximumNumberOfNodes.Root.Right = new Node(15);
+            levelWithMaximumNumberOfNodes.Root.Left.Left = new Node(3);
+            levelWithMaximumNumberOfNodes.Root.Left.Right = new Node(7);
+            levelWithMaximumNumberOfNodes.Root.Right.Left = new Node(12);
+            levelWithMaximumNumberOfNodes.Root.Right.Right = new Node(18);
+
+            // Print Tree
+            Console.WriteLine("Binary Tree:");
+            levelWithMaximumNumberOfNodes.Print(levelWithMaximumNumberOfNodes.Root);
+
+            // Find level with max number of nodes
+            Console.WriteLine("Find Max Level with Most Nodes");
+            int maxLevel = binaryTree.FindMaxLevelNodes();
+            Console.WriteLine("Level with maximum number of nodes: " + maxLevel);
         }
     }
 }
