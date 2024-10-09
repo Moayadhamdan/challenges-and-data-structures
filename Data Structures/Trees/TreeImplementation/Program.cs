@@ -210,6 +210,27 @@ namespace TreeImplementation
             Console.WriteLine("Find Max Level with Most Nodes");
             int maxLevel = binaryTree.FindMaxLevelNodes();
             Console.WriteLine("Level with maximum number of nodes: " + maxLevel);
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            // Find Minimum Depth Example
+            Console.WriteLine("=============== Find Minimum Depth Example ===============");
+
+            BinaryTree findMinDepthTree = new BinaryTree();
+            findMinDepthTree.Root = new Node(10);
+            findMinDepthTree.Root.Left = new Node(5);
+            findMinDepthTree.Root.Right = new Node(15);
+            findMinDepthTree.Root.Left.Left = new Node(3);
+            findMinDepthTree.Root.Left.Right = new Node(7);
+
+            // Print the tree structure before testing
+            Console.WriteLine("Binary Tree:");
+            findMinDepthTree.Print(findMinDepthTree.Root);
+
+            // Test FindMinimumDepth Method
+            int minDepth = findMinDepthTree.FindMinimumDepth();
+            Console.WriteLine("\nMinimum Depth of the Tree: " + minDepth);
         }
     }
 }
