@@ -307,6 +307,39 @@ namespace TreeImplementation
             return 0;
         }
 
+
+        // Binary Tree to Binary Search Tree
+        public void ConvertToBST()
+        {
+            if (Root == null) return;
+
+            List<int> values = new List<int>();
+            CollectValuesInOrder(Root, values);
+
+            values.Sort();
+
+            int index = 0;
+            AssignValuesInOrder(Root, values, ref index);
+        }
+
+        // Helper method to collect values in an in-order traversal
+        private void CollectValuesInOrder(Node node, List<int> values)
+        {
+            if (node == null) return;
+            CollectValuesInOrder(node.Left, values);
+            values.Add(node.Value);
+            CollectValuesInOrder(node.Right, values);
+        }
+
+        // Helper method to assign sorted values back to the nodes in an in-order traversal
+        private void AssignValuesInOrder(Node node, List<int> values, ref int index)
+        {
+            if (node == null) return;
+            AssignValuesInOrder(node.Left, values, ref index);
+            node.Value = values[index++];
+            AssignValuesInOrder(node.Right, values, ref index);
+        }
+
     }
 
 }

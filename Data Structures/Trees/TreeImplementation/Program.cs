@@ -231,6 +231,30 @@ namespace TreeImplementation
             // Test FindMinimumDepth Method
             int minDepth = findMinDepthTree.FindMinimumDepth();
             Console.WriteLine("\nMinimum Depth of the Tree: " + minDepth);
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            // Binary Tree to Binary Search Tree
+            Console.WriteLine("=============== Binary Tree to Binary Search Tree ===============");
+            BinaryTree BTreeToBST = new BinaryTree();
+            BTreeToBST.Root = new Node(40);
+            BTreeToBST.Root.Left = new Node(10);
+            BTreeToBST.Root.Right = new Node(50);
+            BTreeToBST.Root.Left.Left = new Node(5);
+            BTreeToBST.Root.Left.Right = new Node(30);
+            BTreeToBST.Root.Right.Right = new Node(60);
+            BTreeToBST.Root.Left.Right.Left = new Node(20);
+            BTreeToBST.Root.Left.Right.Right = new Node(35);
+
+            Console.WriteLine("Before Conversion (Binary Tree):");
+            BTreeToBST.Print(BTreeToBST.Root);
+
+            // Convert to BST
+            BTreeToBST.ConvertToBST();
+
+            Console.WriteLine("\nAfter Conversion (Binary Search Tree):");
+            BTreeToBST.Print(BTreeToBST.Root);
         }
     }
 }
