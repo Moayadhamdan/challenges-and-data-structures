@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeImplementation", "TreeImplementation\TreeImplementation.csproj", "{E3A4D88E-8FAD-47BB-B637-C7BFA3FA58E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeImplementation", "TreeImplementation\TreeImplementation.csproj", "{E3A4D88E-8FAD-47BB-B637-C7BFA3FA58E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeImplementation-Tests", "TreeImplementation-Tests\TreeImplementation-Tests.csproj", "{77DB0196-27F5-4090-B3B2-F40342F4091B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeImplementation-Tests", "TreeImplementation-Tests\TreeImplementation-Tests.csproj", "{77DB0196-27F5-4090-B3B2-F40342F4091B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableImplementation", "..\HashTable\HashTableImplementation\HashTableImplementation.csproj", "{42A3880D-23E9-476D-A3AA-9E915BFF96F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{77DB0196-27F5-4090-B3B2-F40342F4091B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77DB0196-27F5-4090-B3B2-F40342F4091B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77DB0196-27F5-4090-B3B2-F40342F4091B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A3880D-23E9-476D-A3AA-9E915BFF96F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A3880D-23E9-476D-A3AA-9E915BFF96F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A3880D-23E9-476D-A3AA-9E915BFF96F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A3880D-23E9-476D-A3AA-9E915BFF96F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
