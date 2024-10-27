@@ -30,4 +30,6 @@
 ###    O) [Binary Tree - Level with Maximum Number of Nodes](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/MaxLevelNodes/README.md)
 ###    P) [Binary Tree - Minimum Depth](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/MinimumDepth/README.md)
 ###    Q) [Binary Tree - Binary Tree to Binary Search Tree](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/BTreeToBST/README.md)
+###    R) [HashTable Implementation](https://github.com/Moayadhamdan/challenges-and-data-structures/blob/main/Data%20Structures/HashTables/HashTableImplementation/README.md)
+
 
