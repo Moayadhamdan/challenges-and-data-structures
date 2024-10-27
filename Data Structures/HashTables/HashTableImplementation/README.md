@@ -1,4 +1,4 @@
-# Binary Tree - Binary Tree to Binary Search Tree
+# HashTable Implementation
 
 ## Challenge Description:
 Create a hash table data structure that uses chaining to handle collisions. The hash table should accept string keys and generic values T. Use a hash function to map keys to array indices, and handle collisions by storing multiple key-value pairs in linked lists at each index. Implement methods for inserting, searching, and deleting key-value pairs, checking if a key exists, displaying the table, and counting elements. This design ensures efficient storage and retrieval, even with collisions.
